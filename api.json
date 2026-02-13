@@ -1,10 +1,8 @@
 {
-  "category": "FAE_FOLKLORE",
-
   "meta": {
     "version": "1.0.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-01-14",
+    "last_updated": "2026-02-13",
     "repository": "https://github.com/wyrdness/goblin",
     "maintainers": [
       {
@@ -18,374 +16,111 @@
       "content": "CC-BY-4.0"
     }
   },
-
   "phenomenon": {
     "id": "goblin",
     "name": "Goblin",
-    "aliases": [
-      {
-        "name": "Gobelinus",
-        "language": "Medieval Latin",
-        "meaning": "Mischievous spirit"
-      },
-      {
-        "name": "Kobold",
-        "region": "Germany",
-        "meaning": "Germanic household spirit or mine spirit"
-      },
-      {
-        "name": "Gobelin",
-        "region": "France"
-      }
-    ],
+    "aliases": [],
     "category": "FAE_FOLKLORE",
-    "subcategory": "Entity/Spirit",
+    "subcategory": "|",
     "tags": [
-      "small-creature",
-      "mischievous",
-      "european-folklore",
-      "underground-dweller",
-      "fantasy-staple",
-      "malevolent",
-      "treasure-hoarder"
+      "folklore",
+      "mythology"
     ],
-    "status": "traditional_folklore",
+    "status": "documented",
     "description": {
-      "summary": "Small, mischievous or malevolent creatures from European folklore, typically grotesque in appearance, dwelling underground or in dark places.",
-      "full": "Goblins are small supernatural creatures from European folklore, typically depicted as grotesque, mischievous, or malevolent beings. Standing 1-3 feet tall with greenish or gray skin, long fingers, and pointed ears, they inhabit caves, underground spaces, forests, and ruins. Their behavior ranges from mischievous pranks to outright malevolence, often stealing and hoarding treasure, causing minor chaos, and tormenting humans. Some traditions describe helpful goblins, though most emphasize their troublesome nature. Goblins are cunning, tool-using, and often organized in groups. They possess minor magical abilities, weakness to iron and sunlight in some traditions, and have become archetypal small monsters in modern fantasy literature and games."
+      "summary": "Goblins are small supernatural creatures from European folklore, typically depicted as grotesque, mischievous, or malevolent beings.",
+      "full": "Goblins are small supernatural creatures from European folklore, typically depicted as grotesque, mischievous, or malevolent beings. Standing 1-3 feet tall with greenish or gray skin, long fingers, and pointed ears, they inhabit caves, underground spaces, forests, and ruins. Their behavior ranges from mischievous pranks to outright malevolence, often stealing and hoarding treasure, causing minor chaos, and tormenting humans. Some traditions describe helpful goblins, though most emphasize their troublesome nature. Goblins are cunning, tool-using, and often organized in groups. They possess minor magical abilities and have become archetypal small monsters in modern fantasy literature and games."
     },
     "etymology": {
-      "origin": "From Medieval Latin 'gobelinus', possibly derived from Greek 'kobalos' (rogue, knave, mischievous spirit)",
-      "meaning": "Mischievous or malevolent spirit",
-      "first_use": "12th-13th century Europe"
+      "origin": "Unknown",
+      "meaning": "To be documented",
+      "first_use": "Unknown"
     }
   },
-
   "classification": {
     "taxonomy": {
       "category": "FAE_FOLKLORE",
-      "type": "Entity/Spirit",
-      "subtype": "Small Humanoid Creature",
-      "variant": "European"
+      "type": "|",
+      "subtype": "Unknown",
+      "variant": "Unknown"
     },
-    "related_phenomena": [
-      {
-        "id": "hobgoblin",
-        "name": "Hobgoblin",
-        "relationship": "variant",
-        "description": "Friendly or less malevolent goblin variant"
-      },
-      {
-        "id": "knocker",
-        "name": "Knocker",
-        "relationship": "variant",
-        "description": "Mine-dwelling goblin from Cornish folklore"
-      },
-      {
-        "id": "redcap",
-        "name": "Redcap",
-        "relationship": "variant",
-        "description": "Malevolent goblin variant from Scottish borders"
-      },
-      {
-        "id": "imp",
-        "name": "Imp",
-        "relationship": "similar",
-        "description": "Small demonic creature with similar traits"
-      },
-      {
-        "id": "gnome",
-        "name": "Gnome",
-        "relationship": "similar",
-        "description": "Earth elemental, similar size and habitat"
-      }
-    ]
+    "related_phenomena": []
   },
-
   "characteristics": {
     "physical": {
-      "height": {
-        "min": 0.3,
-        "max": 1.0,
-        "unit": "meters",
-        "notes": "1-3 feet tall typically"
-      },
-      "coloration": [
-        "greenish skin",
-        "gray skin",
-        "earth-tones",
-        "mottled brown"
-      ],
-      "features": [
-        {
-          "feature": "Grotesque appearance",
-          "description": "Ugly, twisted features often described",
-          "frequency": "common"
-        },
-        {
-          "feature": "Long fingers",
-          "description": "Elongated, claw-like fingers",
-          "frequency": "common"
-        },
-        {
-          "feature": "Pointed ears",
-          "description": "Sharp, bat-like or pointed ears",
-          "frequency": "very common"
-        },
-        {
-          "feature": "Large eyes",
-          "description": "Often described with oversized eyes",
-          "frequency": "occasional"
-        },
-        {
-          "feature": "Sharp teeth",
-          "description": "Pointed or jagged teeth",
-          "frequency": "common"
-        }
-      ],
-      "morphology": "Small humanoid with grotesque features, hunched posture, agile build"
+      "features": [],
+      "morphology": "See README.md for detailed physical description"
     },
-    "abilities": [
-      {
-        "ability": "Minor magic",
-        "description": "Simple spells, curses, illusions",
-        "frequency": "common",
-        "evidence_level": "folklore"
-      },
-      {
-        "ability": "Invisibility",
-        "description": "Ability to become invisible or hide in shadows",
-        "frequency": "occasional",
-        "evidence_level": "folklore"
-      },
-      {
-        "ability": "Shape-shifting",
-        "description": "Limited transformation abilities in some traditions",
-        "frequency": "rare",
-        "evidence_level": "folklore"
-      },
-      {
-        "ability": "Craftsmanship",
-        "description": "Skilled at making tools, weapons, trinkets",
-        "frequency": "common",
-        "evidence_level": "folklore"
-      },
-      {
-        "ability": "Tool use",
-        "description": "Cunning use of tools and weapons",
-        "frequency": "very common",
-        "evidence_level": "folklore"
-      }
-    ],
+    "abilities": [],
     "behavior": {
-      "activity_period": "nocturnal",
-      "disposition": "mischievous to malevolent",
-      "social_structure": "organized groups",
-      "habitat_preference": [
-        "caves",
-        "underground spaces",
-        "forests",
-        "ruins",
-        "dark places",
-        "mines"
-      ],
-      "diet": "Omnivorous, varied",
-      "patterns": [
-        "Steal and hoard treasure",
-        "Cause mischief and minor chaos",
-        "Torment humans",
-        "Organized in tribal groups",
-        "Some helpful to households (minority)"
-      ]
+      "activity_period": "unknown",
+      "disposition": "unknown",
+      "habitat_preference": []
     }
   },
-
-  "weaknesses": {
-    "vulnerabilities": [
-      {
-        "weakness": "Iron",
-        "description": "Traditional fairy weakness to iron",
-        "severity": "high"
-      },
-      {
-        "weakness": "Sunlight",
-        "description": "Turned to stone or weakened by sunlight in some traditions",
-        "severity": "medium"
-      },
-      {
-        "weakness": "Holy symbols",
-        "description": "Repelled by crosses, holy water",
-        "severity": "medium"
-      }
-    ]
-  },
-
-  "cultural": {
-    "folklore": {
-      "traditions": [
-        "English folklore",
-        "French gobelin traditions",
-        "Germanic kobold beliefs",
-        "Cornish knockers",
-        "Scottish redcap lore"
-      ],
-      "beliefs": [
-        "Goblins steal children and treasure",
-        "Live underground in complex societies",
-        "Can be bargained with",
-        "Dangerous if provoked",
-        "Some types helpful if respected"
-      ],
-      "protection_methods": [
-        "Iron horseshoes or nails",
-        "Holy symbols",
-        "Salt barriers",
-        "Avoid their territories",
-        "Offerings (for helpful types)"
-      ]
-    },
-    "regional_variants": [
-      {
-        "name": "Hobgoblin",
-        "region": "England",
-        "distinction": "Friendly household spirit variant"
-      },
-      {
-        "name": "Knocker",
-        "region": "Cornwall",
-        "distinction": "Mine-dwelling, warns of cave-ins"
-      },
-      {
-        "name": "Redcap",
-        "region": "Scottish borders",
-        "distinction": "Extremely violent, murderous"
-      },
-      {
-        "name": "Kobold",
-        "region": "Germany",
-        "distinction": "Household or mine spirit"
-      }
-    ],
-    "popular_culture": {
-      "literature": [
-        "Tolkien's goblins (The Hobbit, Lord of the Rings)",
-        "Harry Potter (Gringotts goblins)",
-        "Labyrinth (Jareth's goblin army)",
-        "Traditional fairy tales"
-      ],
-      "games": [
-        "Dungeons & Dragons (archetypal small monster)",
-        "World of Warcraft",
-        "Magic: The Gathering",
-        "Countless fantasy RPGs and video games"
-      ],
-      "film_tv": [
-        "Labyrinth (1986)",
-        "The Hobbit film trilogy",
-        "Hellboy films",
-        "Various fantasy series"
-      ],
-      "impact": "Goblins are archetypal fantasy monsters, foundational to modern fantasy gaming and literature"
-    }
-  },
-
   "distribution": {
     "range": {
-      "description": "European folklore origin, now worldwide through fantasy adoption",
-      "continents": ["Europe"],
-      "regions": [
-        "England",
-        "France",
-        "Germany",
-        "Cornwall",
-        "Scotland",
-        "Ireland"
-      ]
+      "description": "Unknown",
+      "continents": [],
+      "countries": [],
+      "regions": []
     },
-    "cultural_spread": {
-      "primary": "Western Europe (England, France, Germany)",
-      "notes": "Original folklore European; concept now universal in fantasy culture"
+    "hotspots": [],
+    "temporal": {
+      "first_recorded": {
+        "date": "Unknown",
+        "circa": true,
+        "source": "Traditional folklore"
+      }
     }
   },
-
   "history": {
     "origins": {
-      "cultural_roots": "Medieval European folklore, possibly pre-Christian roots",
-      "earliest_accounts": "12th-13th century documented references",
-      "folklore_connections": "Related to broader European fairy and spirit traditions"
+      "cultural_roots": "Unknown",
+      "earliest_accounts": "See README.md for historical details",
+      "folklore_connections": "Unknown"
     },
-    "timeline": [
-      {
-        "date": "12th-13th century",
-        "event": "Earliest documented references",
-        "significance": "Term 'gobelinus' appears in Medieval Latin texts",
-        "source": "Medieval manuscripts"
-      },
-      {
-        "date": "Medieval period",
-        "event": "Widespread goblin folklore",
-        "significance": "Goblins established in European folk tradition",
-        "source": "Folk tales and legends"
-      },
-      {
-        "date": "1937",
-        "event": "Tolkien's The Hobbit published",
-        "significance": "Goblins (orcs) establish modern fantasy archetype",
-        "source": "The Hobbit by J.R.R. Tolkien"
-      },
-      {
-        "date": "1974",
-        "event": "Dungeons & Dragons released",
-        "significance": "Goblins become archetypal low-level fantasy monster",
-        "source": "D&D gaming system"
-      }
-    ],
-    "modern_era": "Goblins are foundational fantasy creatures, appearing in virtually all fantasy media as archetypal small monsters"
+    "timeline": []
   },
-
-  "modern_interpretation": {
-    "fantasy_archetype": {
-      "role": "Archetypal small monster, low-level enemy, comic relief",
-      "characteristics": [
-        "Weak individually but dangerous in numbers",
-        "Cunning despite low intelligence",
-        "Often comedic antagonists",
-        "Tribal organization",
-        "Cave or underground dwellers"
-      ]
+  "sightings": {
+    "statistics": {
+      "total_documented": 0,
+      "verified": 0,
+      "disputed": 0,
+      "debunked": 0
     },
-    "variations": [
-      "Tolkien's orcs (originally called goblins)",
-      "Greedy banker goblins (Harry Potter)",
-      "Mechanical goblins (World of Warcraft)",
-      "Mischievous tricksters (traditional folklore emphasis)"
-    ]
+    "notable": [],
+    "database_path": "./sightings/"
   },
-
-  "sources": [
-    {
-      "id": "briggs-1976",
-      "type": "book",
-      "title": "A Dictionary of Fairies",
-      "authors": ["Katharine Briggs"],
-      "publication": "Penguin Books",
-      "date": "1976"
+  "evidence": {
+    "physical": [],
+    "photographic": [],
+    "video": [],
+    "audio": [],
+    "trace": []
+  },
+  "theories": {
+    "paranormal": [],
+    "scientific": [],
+    "skeptical": []
+  },
+  "cultural": {
+    "folklore": {
+      "traditions": [],
+      "stories": [],
+      "beliefs": "See README.md for cultural context"
     },
-    {
-      "id": "keightley-1850",
-      "type": "book",
-      "title": "The Fairy Mythology",
-      "authors": ["Thomas Keightley"],
-      "publication": "H.G. Bohn",
-      "date": "1850"
-    },
-    {
-      "id": "tolkien-1937",
-      "type": "book",
-      "title": "The Hobbit",
-      "authors": ["J.R.R. Tolkien"],
-      "publication": "George Allen & Unwin",
-      "date": "1937"
+    "popular_culture": {
+      "literature": [],
+      "film_tv": [],
+      "games": [],
+      "other": []
     }
-  ]
+  },
+  "research": {
+    "researchers": [],
+    "organizations": [],
+    "ongoing_studies": "None documented"
+  },
+  "sources": []
 }
