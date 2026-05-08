@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-08",
     "repository": "https://github.com/wyrdness/goblin",
     "maintainers": [
       {
@@ -16,72 +16,143 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "goblin",
     "name": "Goblin",
-    "aliases": [],
-    "category": "FAE_FOLKLORE",
-    "subcategory": "|",
-    "tags": [
-      "folklore",
-      "mythology"
+    "aliases": [
+      { "name": "Gobelin", "language": "Anglo-Norman French", "region": "Medieval France and England" },
+      { "name": "Gobelinus", "language": "Medieval Latin", "region": "Medieval Europe", "meaning": "Demon or mischievous spirit" },
+      { "name": "Gobelyn", "language": "Middle English", "region": "England", "meaning": "Early English spelling, c. 1330" },
+      { "name": "Goblin", "language": "English", "region": "Europe and worldwide" }
     ],
-    "status": "documented",
+    "category": "FAE_FOLKLORE",
+    "subcategory": "Mischievous supernatural being / small humanoid spirit",
+    "tags": [
+      "fae",
+      "folklore",
+      "europe",
+      "supernatural",
+      "trickster",
+      "small-humanoid",
+      "medieval",
+      "fantasy"
+    ],
+    "status": "historical",
     "description": {
-      "summary": "Goblins are small supernatural creatures from European folklore, typically depicted as grotesque, mischievous, or malevolent beings.",
-      "full": "Goblins are small supernatural creatures from European folklore, typically depicted as grotesque, mischievous, or malevolent beings. Standing 1-3 feet tall with greenish or gray skin, long fingers, and pointed ears, they inhabit caves, underground spaces, forests, and ruins. Their behavior ranges from mischievous pranks to outright malevolence, often stealing and hoarding treasure, causing minor chaos, and tormenting humans. Some traditions describe helpful goblins, though most emphasize their troublesome nature. Goblins are cunning, tool-using, and often organized in groups. They possess minor magical abilities and have become archetypal small monsters in modern fantasy literature and games."
+      "summary": "Goblins are small, grotesque, mischievous or malevolent supernatural beings from European folklore, first attested in the 12th century, ranging from household pranksters (brownies) to murderous territorial spirits (redcaps), and now archetypal monsters in modern fantasy.",
+      "full": "Goblins are small supernatural beings from European folklore, typically depicted as grotesque, mischievous, or malevolent humanoids. The word entered English in the early 14th century from Anglo-Norman French gobelin, and the Medieval Latin form gobelinus appeared around 1140 in Orderic Vitalis's Historia Ecclesiastica describing a demon expelled from a church in Évreux, France. The 1195 text L'Estoire de la guerre sainte by Norman monk Ambroise is the earliest known English attestation. Etymology connects the word to Ancient Greek kóbalos (rogue, mischievous sprite), Medieval Latin forms denoting demons, and Germanic kobold (household spirit). European goblin traditions vary widely: English brownies are benevolent household spirits doing domestic labor at night; Yorkshire boggarts are malevolent, shapeshifting familial spirits; Welsh púca are trickster spirits misleading nighttime wanderers; French lutins are impish stable creatures; border Redcaps are murderous goblins that soak their hats in victims' blood. Similar beings exist globally: Korean dokkaebi are horned tricksters animated from discarded tools; Zulu tokoloshe are evil water spirits; Native American pukwudgies are porcupine-quilled tricksters. Through J.R.R. Tolkien, George MacDonald, D&D, and the broader fantasy genre, goblins have become one of the most iconic small monster types in global popular culture."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Anglo-Norman French gobelin, from Old French gobelin; Medieval Latin gobelinus (c. 1140, Orderic Vitalis). Possibly from Ancient Greek kóbalos (rogue/mischievous sprite) or from Germanic kobold (household spirit). Some scholars trace it to the French proper name Gobel or Gobeau.",
+      "meaning": "A small, grotesque, supernatural being; demon or mischievous spirit. The Medieval Latin gobelinus described a specific demon reportedly haunting a pagan site in Évreux.",
+      "first_use": "c. 1140 (Medieval Latin gobelinus, Orderic Vitalis, Historia Ecclesiastica); c. 1195 (gobelin, Ambroise, L'Estoire de la guerre sainte); c. 1330 (gobelyn, Middle English)"
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "FAE_FOLKLORE",
-      "type": "|",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Small supernatural humanoid",
+      "subtype": "Mischievous spirit / malevolent fairy",
+      "variant": "European (multiple regional types)"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "fairy", "name": "Fairy", "relationship": "related", "description": "European supernatural beings; goblins are sometimes classified as a type of malevolent fairy" },
+      { "id": "kobold", "name": "Kobold", "relationship": "similar", "description": "Germanic household spirit; etymologically related to goblin via the kobold root" },
+      { "id": "brownie", "name": "Brownie", "relationship": "subset", "description": "Benevolent household goblin of English and Scottish tradition" },
+      { "id": "redcap", "name": "Redcap", "relationship": "subset", "description": "Murderous Anglo-Scottish border goblin; a particularly dangerous regional variant" },
+      { "id": "boggart", "name": "Boggart", "relationship": "subset", "description": "Malevolent Yorkshire goblin attached to specific houses or farms" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 0.3, "max": 1.0, "unit": "meters", "confidence": "low" },
+      "coloration": ["green", "gray", "brown", "various (highly variable by tradition)"],
+      "features": [
+        { "feature": "Small stature", "description": "Diminutive humanoid, approximately 30 cm to 1 m depending on tradition", "frequency": "always" },
+        { "feature": "Grotesque or ugly appearance", "description": "Generally described as ugly, with exaggerated features; grotesque rather than beautiful", "frequency": "common" },
+        { "feature": "Shapeshifting ability", "description": "Many goblin types (boggarts, púca) can change form into animals or objects", "frequency": "common" },
+        { "feature": "Furry or leathery skin", "description": "Furry or leathery appearance described in some traditions", "frequency": "occasional" }
+      ],
+      "morphology": "Highly variable across the many regional types. The canonical 'goblin' of modern fantasy (small, green-skinned, pointy-eared, cunning) is largely a literary and gaming synthesis of multiple traditions. In historical folklore, goblins range from shaggy-haired brownies to iron-shod Redcaps."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Shapeshifting", "description": "Common ability across many goblin types; can assume animal or object forms", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Household labor (brownies)", "description": "Benevolent brownies perform domestic chores at night in exchange for offerings", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Causing mischief and bad luck", "description": "Goblins across traditions cause unexplained accidents, lost objects, and domestic disorder", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Violence (Redcaps)", "description": "Murderous Redcaps kill wayfarers and soak their caps in spilled blood; flee from holy objects or swift escapees", "frequency": "occasional", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "variable",
+      "social_structure": "variable",
+      "habitat_preference": ["caves", "underground spaces", "forests", "ruins", "abandoned buildings", "stables", "household spaces"],
+      "diet": "Variable; some traditions describe goblins stealing food and drink",
+      "patterns": [
+        "Household goblins (brownies) work at night and leave if offered clothing or if their work is criticized",
+        "Boggarts attach themselves to specific families or locations and become mischievous through offense",
+        "Redcaps inhabit forsaken towers and slay travelers for their blood",
+        "Goblins can often be repelled or appeased with specific offerings or rituals"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Goblin traditions are found across Europe, with the oldest documented examples from Norman France and England (12th century). Cognate traditions exist globally in Korea (dokkaebi), Africa (Zulu tokoloshe), and among Indigenous North American peoples (Wampanoag pukwudgie). The modern fantasy goblin has achieved global distribution through literature and gaming.",
+      "continents": ["Europe", "Asia", "Africa", "North America"],
+      "countries": ["United Kingdom", "France", "Germany", "Ireland", "Wales", "Scotland", "South Korea", "South Africa"],
+      "regions": [
+        "Yorkshire, England",
+        "Anglo-Scottish border",
+        "Normandy, France",
+        "Wales",
+        "Ireland",
+        "Évreux, France"
+      ]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Évreux, Normandy",
+        "location": {
+          "description": "Évreux, Normandy, France",
+          "country": "France",
+          "region": "Normandy"
+        },
+        "notes": "Historical hub of goblin lore; featured in Orderic Vitalis's c. 1140 account of a demon named Gobelinus"
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "1140-01-01",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Orderic Vitalis, Historia Ecclesiastica, c. 1140 (gobelinus)"
+      },
+      "peak_activity_periods": [
+        { "period": "Medieval period", "description": "Goblins feature extensively in medieval European folklore and ecclesiastical accounts" },
+        { "period": "1970s–present", "description": "Fantasy literature and gaming (D&D, Tolkien adaptations) establish the modern global goblin archetype" }
+      ],
+      "seasonal_patterns": "Many household goblin traditions associate activity with night and winter; some traditions hold that goblins are more active on certain religious holidays."
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "European folklore tradition with Norman French origins documented from the 12th century. The word goblin consolidates traditions of household spirits, forest demons, and mischievous sprites that had been described under various local names across medieval Europe.",
+      "earliest_accounts": "c. 1140: Orderic Vitalis's Historia Ecclesiastica describes a demon named Gobelinus haunting a church in Évreux, Normandy. c. 1195: Ambroise's L'Estoire de la guerre sainte contains the first English-language attestation.",
+      "folklore_connections": "Etymologically connected to Germanic kobold, Ancient Greek kóbalos, and possibly the French personal name Gobel. The goblin consolidates a broad category of small supernatural beings — household spirits, forest sprites, and territorial demons — from across European tradition. Cognate beings appear independently in many world cultures."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1140-01-01", "event": "Orderic Vitalis records the word gobelinus in Historia Ecclesiastica, describing a demon haunting a pagan site in Évreux, Normandy", "significance": "Earliest documented use of the word; establishes the Norman origin of the English term", "source": "Wikipedia article on Goblin" },
+      { "date": "1195-01-01", "event": "Norman monk Ambroise uses gobelin in L'Estoire de la guerre sainte", "significance": "First English-language attestation", "source": "Wikipedia article on Goblin" },
+      { "date": "1862-01-01", "event": "Christina Rossetti publishes Goblin Market, a narrative poem featuring goblin fruit merchants", "significance": "Major literary treatment of goblins in the Victorian era", "source": "Wikipedia article on Goblin" },
+      { "date": "1937-01-01", "event": "J.R.R. Tolkien's The Hobbit features goblins (evil creatures in the Misty Mountains), establishing much of the modern fantasy archetype", "significance": "Most influential single literary treatment shaping the modern global concept of goblins", "source": "Wikipedia article on Goblin" }
+    ],
+    "modern_era": "Goblins have become one of the most ubiquitous monster types in global fantasy culture through Tolkien's The Hobbit, Dungeons & Dragons (which introduced 'goblinoids' as a creature category), and countless derivative works. The modern green-skinned, cunning, cowardly goblin of video games and fantasy is a synthesis of multiple folkloric traditions processed through literary and gaming culture."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +163,94 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": []
   },
+
   "theories": {
-    "paranormal": [],
-    "scientific": [],
+    "paranormal": [
+      {
+        "name": "Genuine supernatural beings",
+        "description": "In traditional folk belief across Europe, goblins and related beings (brownies, boggarts) were understood as real supernatural entities with agency, capable of helping or harming humans.",
+        "proponents": ["Medieval European folk tradition", "Practitioners of folk magic"],
+        "evidence_cited": ["Consistent tradition of household spirit beliefs across unconnected European cultures", "Domestic rituals developed specifically to manage goblin relationships"]
+      }
+    ],
+    "scientific": [
+      {
+        "name": "Psychological and social function",
+        "description": "Goblin traditions serve psychological and social functions: explaining domestic accidents and misfortune, enforcing norms (brownies leave if you criticize them), encoding property relationships (boggarts are attached to specific locations), and providing entertainment.",
+        "proponents": ["Folklore scholars", "Anthropologists"],
+        "evidence_cited": ["Consistent correlation between goblin behaviors and the social norms they enforce", "Similar traditions appear independently in many cultures suggesting parallel psychological origins"]
+      }
+    ],
     "skeptical": []
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "English brownie tradition (helpful household spirit)",
+        "Yorkshire boggart tradition (malevolent attached spirit)",
+        "Welsh púca tradition (trickster goblin)",
+        "Anglo-Scottish Redcap tradition (murderous territorial goblin)",
+        "French lutin tradition (impish stable spirit)",
+        "Irish clurichaun tradition (alcohol-loving goblin)",
+        "Norman French gobelin tradition (12th century)"
+      ],
+      "stories": [
+        "A brownie helps a farmer thresh grain and churn butter each night; the farmer leaves old clothes as a gift and the brownie never returns",
+        "A boggart follows a family when they try to move away from their haunted farm",
+        "A Redcap kills a traveler sheltering in its ruined tower and dips its cap in the blood to maintain its red color"
+      ],
+      "beliefs": "Goblin belief across European tradition emphasizes reciprocity: creatures like brownies can be helpful if treated correctly but become troublesome if offended. Malevolent goblins (Redcaps, boggarts) are territorial and dangerous. Most traditions agree on methods to repel or appease goblins."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "Goblin Market — Christina Rossetti (1862)",
+        "The Princess and the Goblin — George MacDonald (1872)",
+        "The Hobbit — J.R.R. Tolkien (1937)",
+        "The Lord of the Rings — J.R.R. Tolkien (1954–55) (orcs/goblins)",
+        "Harry Potter series — J.K. Rowling (goblins as bankers at Gringotts)"
+      ],
+      "film_tv": [
+        "Spider-Man (2002) — Green Goblin as villain",
+        "Labyrinth (1986) — goblin kingdom"
+      ],
+      "games": [
+        "Dungeons & Dragons (1974–present) — popularized 'goblinoids' as a creature category",
+        "The Elder Scrolls series — goblins as hostile beast races",
+        "Minecraft — goblins in various mod traditions",
+        "Goosebumps Goblin Monday — goblins as shapeshifting green-furred creatures"
+      ],
+      "other": [
+        "The Smurfs early English translations referred to them as 'goblins'",
+        "Goblin Valley State Park, Utah — named for its goblin-like rock formations"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
+    "researchers": [
+      { "name": "Orderic Vitalis", "affiliation": "Norman monk, historian", "contribution": "Earliest documented use of the word gobelinus in Historia Ecclesiastica (c. 1140)", "period": "c. 1075–1142" }
+    ],
     "organizations": [],
-    "ongoing_studies": "None documented"
+    "ongoing_studies": "Goblins are studied in folklore studies, medieval history, and as examples of household-spirit belief traditions. Academic interest has grown through the lens of fantasy genre studies."
   },
-  "sources": []
+
+  "sources": [
+    {
+      "id": "wikipedia-goblin",
+      "type": "website",
+      "title": "Goblin — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Goblin",
+      "accessed": "2026-05-08"
+    }
+  ]
 }
